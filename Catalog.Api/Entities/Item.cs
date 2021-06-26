@@ -1,6 +1,6 @@
 using System;
 
-namespace Catlog.Entities
+namespace Catalog.Entities
 {
     //RecordTypes classes have better support immutable object
     public record Item

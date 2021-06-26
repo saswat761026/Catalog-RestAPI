@@ -4,13 +4,9 @@ version: '3.4'
 
 services:
   catlog:
-    image: catlog
+    image: catalog
     build:
       context: .
       dockerfile: ./Dockerfile
     ports:
-      - 80:80
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-    volumes:
-      - ~/.vsdbg:/remote_debugger:rw
+      - 80 :80

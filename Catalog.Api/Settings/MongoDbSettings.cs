@@ -1,4 +1,4 @@
-namespace Catlog.Settings
+namespace Catalog.Settings
 {
 
     public class MongoDbSettings

@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using Catlog.Entities;
+using Catalog.Entities;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Catlog.Repositories
+namespace Catalog.Repositories
 {
 
     public class InMemItemsRepository : IItemsRepository

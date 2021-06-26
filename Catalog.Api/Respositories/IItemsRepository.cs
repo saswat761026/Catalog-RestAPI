@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Catlog.Entities;
+using Catalog.Entities;
 
-namespace Catlog.Repositories
+namespace Catalog.Repositories
 {
     public interface IItemsRepository
     {

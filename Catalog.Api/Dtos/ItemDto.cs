@@ -1,6 +1,6 @@
 using System;
 
-namespace Catlog.Dtos
+namespace Catalog.Dtos
 {
     //RecordTypes classes have better support immutable object
     public record ItemDto

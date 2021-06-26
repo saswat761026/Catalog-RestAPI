@@ -1,14 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
-using Catlog.Repositories;
+using Catalog.Repositories;
 using System.Collections.Generic;
-using Catlog.Entities;
+using Catalog.Entities;
 using System;
 using System.Linq;
-using Catlog.Dtos;
+using Catalog.Dtos;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
-namespace Catlog.Contollers
+namespace Catalog.Contollers
 {
     [ApiController]
     [Route("items")]

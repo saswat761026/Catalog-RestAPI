@@ -11,9 +11,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Catlog.Repositories;
+using Catalog.Repositories;
 using MongoDB.Driver;
-using Catlog.Settings;
+using Catalog.Settings;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Bson;
@@ -22,7 +22,7 @@ using System.Text.Json;
 using Microsoft.AspNetCore.Http;
 using System.Net.Mime;
 
-namespace Catlog
+namespace Catalog
 {
     public class Startup
     {

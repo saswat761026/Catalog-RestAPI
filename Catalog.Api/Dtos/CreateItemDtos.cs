@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Catlog.Dtos{
+namespace Catalog.Dtos{
     public record CreateItemDto{
         [Required]
         public string Name {get; init;}

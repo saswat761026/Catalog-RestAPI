@@ -1,7 +1,7 @@
-using Catlog.Dtos;
-using Catlog.Entities;
+using Catalog.Dtos;
+using Catalog.Entities;
 
-namespace Catlog
+namespace Catalog
 {
     public static class Extensions
     {
