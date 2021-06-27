@@ -1,6 +1,6 @@
 using System;
 
-namespace Catalog.Dtos
+namespace Catalog.Api.Dtos
 {
     //RecordTypes classes have better support immutable object
     public record ItemDto

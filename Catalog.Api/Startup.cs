@@ -11,9 +11,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Catalog.Repositories;
+using Catalog.Api.Repositories;
 using MongoDB.Driver;
-using Catalog.Settings;
+using Catalog.Api.Settings;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Bson;
@@ -22,7 +22,7 @@ using System.Text.Json;
 using Microsoft.AspNetCore.Http;
 using System.Net.Mime;
 
-namespace Catalog
+namespace Catalog.Api
 {
     public class Startup
     {
@@ -56,7 +56,7 @@ namespace Catalog
             });
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Catlog", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Catalog.Api", Version = "v1" });
             });
 
             services.AddHealthChecks().AddMongoDb(mongoDbsettings.ConnectionString,
@@ -72,7 +72,7 @@ namespace Catalog
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Catlog v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Catalog.Api v1"));
             }
 
             if (env.IsDevelopment())
